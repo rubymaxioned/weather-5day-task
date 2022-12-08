@@ -116,13 +116,7 @@ header {
   background-color: #1E202B;
 }
 
-header .wrapper,
-.banner-section .wrapper,
-.live-cameras-section .wrapper,
-.dolor-section .wrapper,
-.feature-section .wrapper { 
-  width: 92%;
-}
+.wrapper { width: 92%;}
 
 h1 {
   margin-bottom: 6px;
@@ -156,6 +150,7 @@ h1 {
   background: #262936;
   font-size: 13px;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .nav-menu li { 
@@ -223,7 +218,7 @@ nav { padding-bottom: 40px; }
   background: url(/assets/images/banner@2x.png) no-repeat left bottom/cover;
 }
 
-.location-form { 
+form { 
   display: flex;
   align-items: center;
   border-radius: 30px;
@@ -231,7 +226,8 @@ nav { padding-bottom: 40px; }
   justify-content: space-between;
 }
 
-.location input { 
+.location input,
+.email input { 
   padding: 15px 0 15px 10%;
   border: none;
   border-radius: 30px;
@@ -239,14 +235,16 @@ nav { padding-bottom: 40px; }
   background-color: #1E202B;
 }
 
-.location { flex-basis: 40%; }
+/* .location { flex-basis: 40%; } */
 
-.find { 
+.find,
+.subscribe { 
   margin-right: 5px;
   flex-basis: 32%;
 }
 
-.find button { 
+.find button,
+.subscribe button { 
   width: 100%;
   padding: 11px 0;
   border: none;
@@ -383,13 +381,51 @@ h4 {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer { 
+  padding: 40px 0 50px;
+  background-color: #262936;
+}
 
+.social-links li a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  color: #058DC6;
+  background-color: #1E202B;
+}
 
+.icon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "FontAwesome";
+  font-size: 15px;
+  text-indent: 0;
+  transform: translate(-50%, -50%);
+}
 
+.facebook::before { content: '\f09a'; }
+.twitter::before { content: '\f099';}
+.google::before { content: '\f0d5'; }
+.pinterest::before { content: '\f231'; }
 
+.icon {
+  display: inline-block;
+  text-indent: -9999px;
+}
 
+.subscribe-form { margin-bottom: 25px; }
 
+footer p {
+  color: #A0A2AA;
+  font-size: 12px;
+  line-height: 20px;
+}
 
+.email input::placeholder { font-size: 11px; }
+
+input:focus { color: #fff; }
  /*=================================
   footer styling ends here
 =================================*/ 
