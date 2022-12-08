@@ -132,6 +132,7 @@ h1 {
 .mobile-nav {
   padding-bottom: 33px;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -352,7 +353,10 @@ h4 {
   gap: 7px;
 }
 
-.weather li figure { max-width: 10px; }
+.weather li figure,
+.application li figure {
+  max-width: 10px; 
+}
 
 .weather li p {
   margin: 10px 0;
@@ -373,6 +377,8 @@ h4 {
   flex-basis: 30%;
   flex-grow: 1;
 }
+
+.text-container p { margin-bottom: 10px; }
 /*feature section end*/
 /*=================================
   main styling ends here
@@ -426,13 +432,76 @@ footer p {
 .email input::placeholder { font-size: 11px; }
 
 input:focus { color: #fff; }
+.capital::first-letter { text-transform: capitalize;}
  /*=================================
   footer styling ends here
 =================================*/ 
 
 /*media query starts*/
+/*media query for 480px starts here*/
+@media only screen and (min-width: 480px) {
+.wrapper { width: 86%; }
+
+.find,
+.subscribe {
+  margin-right: 4px;
+  flex-basis: 20%;
+}
+
+.dolor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info figure img { max-width: 15px; }
+
+.weather li figure,
+.application li figure {
+  max-width: 15px;
+}
+
+.weather-container { margin-bottom: 15px; }
+.weather li { gap: 15px; }
+.awesome-container h2 { margin-bottom: 25px; }
+.header-top { padding-bottom: 10px; }
+
+footer p {
+  font-size: 9px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+}  
+
+/*media query for 540px starts here*/
+@media only screen and (min-width: 540px) {
+h3 { font-size: 15px; }
+.cities li span { font-size: 10px; }
+.cities li { margin-bottom: 35px; }
+
+}  
+
+/*media query for 768px starts here*/
+@media only screen and (min-width: 768px) {
+
+
+
+} 
+
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (min-width: 995px) {
+
+
+
+}  
+
+/*media query for 1024px starts here*/
+@media only screen and (min-width: 1024px) {
 
 
 
