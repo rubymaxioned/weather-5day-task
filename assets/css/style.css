@@ -116,7 +116,10 @@ header {
   background-color: #1E202B;
 }
 
-header .wrapper { width: 93%; }
+header .wrapper,
+.banner-section .wrapper { 
+  width: 93%;
+}
 
 h1 {
   margin-bottom: 6px;
@@ -156,6 +159,8 @@ h1 {
   padding: 20px 0;
   border-bottom: 1px solid #363944;
 }
+
+.nav-menu li:last-child { border-bottom: none; }
 
 .nav-menu li a { color: #CBCCCE; } 
 nav { padding-bottom: 40px; }
@@ -208,7 +213,46 @@ nav { padding-bottom: 40px; }
 /*=================================
   main styling starts here
 =================================*/
+/*banner section start*/
+.banner-section {
+  min-height: 240px;
+  padding-top: 60px;
+  background: url(/assets/images/banner@2x.png) no-repeat left bottom/cover;
+}
 
+.location-form { 
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #1E202B;
+  justify-content: space-between;
+}
+
+.location input { 
+  padding: 15px 0 15px 10%;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background-color: #1E202B;
+}
+
+.location { flex-basis: 40%; }
+
+.find { 
+  margin-right: 5px;
+  flex-basis: 32%;
+}
+
+.find button { 
+  width: 100%;
+  padding: 11px 0;
+  border: none;
+  border-radius: 25px;
+  background-color: #009AD8;
+  color: #fff;
+  text-transform: capitalize;
+}
+/*banner section end*/
 
 
 
