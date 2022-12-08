@@ -258,7 +258,7 @@ form {
 
 /*live-cameras section start*/
 .live-cameras-section { 
-  padding: 90% 0 60px 0;
+  padding: 60px 0;
   background-color: #1E202B;
 }
 
@@ -344,7 +344,7 @@ h4 {
 }
 
 .text-container h4 { color: #E8E8E9; }
-.application-container { padding-bottom: 10px; }
+.application-container { margin-bottom: 10px; }
 
 .weather li { 
   border-bottom: 1px solid #363944;
@@ -476,33 +476,151 @@ footer p {
   justify-content: center;
   gap: 10px;
 }
+
+.info p { text-align: justify; }
 }  
 
 /*media query for 540px starts here*/
 @media only screen and (min-width: 540px) {
+  .wrapper { width: 75%; }
 h3 { font-size: 15px; }
 .cities li span { font-size: 10px; }
 .cities li { margin-bottom: 35px; }
 
+.application-container,
+.weather-container {
+  margin-bottom: 20px;
+}
+
+footer p { font-size: 10px; }
+
+.cities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dolor-section .wrapper,
+.feature-section .wrapper {
+  width: 70%;
+}
 }  
 
 /*media query for 768px starts here*/
 @media only screen and (min-width: 768px) {
+.wrapper { width: 86%; }
 
+.cities {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px
+}
 
+.cities li { 
+  flex-basis:  48%;
+  flex-grow: 1;
+}
 
+.nav-menu li { padding: 30px 0; }
+
+.find,
+.subscribe {
+  flex-basis: 15%;
+}
+
+h4 { font-size: 14px; }
+
+.info p,
+.text-container p {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* .dolor-section .wrapper,
+.feature-section .wrapper {
+  width: 86%;
+} */
 } 
+
 
 /*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
+.hamburger-toggle { display: none; }
 
+.nav-menu { 
+  flex-direction: row;
+  gap: 20px;
+  background-color: #1E202B;
+}
 
+.nav-menu li,
+.nav-menu li:last-child { 
+  padding: 0;
+  border: 2px solid transparent;
+}
 
+.active { 
+  border: 2px solid #0C8AC1;
+  border-radius: 15px;
+}
+
+header .wrapper { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu li a { padding: 5px 10px; }
+
+.find,
+.subscribe {
+  flex-basis: 10%;
+}
+
+.cities li { flex-basis: 22%; }
+
+.dolor-section .wrapper,
+.feature-section .wrapper {
+  width: 86%;
+}
+
+.dolor { flex-direction: row; }
+.info p { text-align: initial; }
+
+.feature-section .wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.feature-section .wrapper > div { 
+  flex-basis: 30%;
+  flex-grow: 1;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe-form { flex-basis: 70%; }
+.subscribe { flex-basis: 15%; }
 }  
 
 /*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
 
 
+
+}  
+
+/*media query for 1366px starts here*/
+@media only screen and (min-width: 1366px) {
+.wrapper,
+.dolor-section .wrapper,
+.feature-section .wrapper { 
+  width: 79%;
+}
+
+.logo { flex-basis: 33%; }
 
 }  
