@@ -117,7 +117,8 @@ header {
 }
 
 header .wrapper,
-.banner-section .wrapper { 
+.banner-section .wrapper,
+.live-cameras-section .wrapper { 
   width: 93%;
 }
 
@@ -254,6 +255,48 @@ nav { padding-bottom: 40px; }
 }
 /*banner section end*/
 
+/*live-cameras section start*/
+.live-cameras-section { 
+  padding: 90% 0 60px 0;
+  background-color: #1E202B;
+}
+
+h2 {
+  margin-bottom: 18px;
+  color: #F6F6F6;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.img-container { 
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.play-image {
+  max-width: 15%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.live-image img { border-radius: 5px; }
+
+h3 {
+  color: #EFEFF0;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.cities li span{ 
+  font-size: 9px;
+  color: #70727B;
+}
+
+.cities li { margin-bottom:  26px; }
+/*live-cameras section end*/
 
 
 
