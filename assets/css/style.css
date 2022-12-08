@@ -119,7 +119,8 @@ header {
 header .wrapper,
 .banner-section .wrapper,
 .live-cameras-section .wrapper,
-.dolor-section .wrapper { 
+.dolor-section .wrapper,
+.feature-section .wrapper { 
   width: 93%;
 }
 
@@ -264,7 +265,7 @@ nav { padding-bottom: 40px; }
 
 h2 {
   margin-bottom: 18px;
-  color: #F6F6F6;
+  color: #E8E8E9;
   font-size: 30px;
   font-weight: 400;
 }
@@ -329,6 +330,13 @@ h4 {
 
 .info figure img { max-width: 10px; }
 /*dolor section end*/
+
+/*feature section start*/
+.feature-section { 
+  padding-top: 55px;
+  background-color: #1E202B;
+}
+/*feature section end*/
 
 /*=================================
   main styling ends here
