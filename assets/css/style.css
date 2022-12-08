@@ -657,5 +657,12 @@ h2 { font-size: 33px; }
 .img-container { margin-bottom: 18px; }
 .cities li h3 { margin-bottom: 2px; }
 .cities li span { font-weight: 700; }
+.live-image img { min-height: 178px; }
+.dolor-section { padding-top: 67px; }
+.dolor li span { font-size: 22px; }
+h4 { font-size: 13px; }
+.dolor { gap: 38px; }
+.info p {font-size: 13.5px; }
+.info p { line-height:  18px; }
 }
  
