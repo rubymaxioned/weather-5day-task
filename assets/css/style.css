@@ -118,7 +118,8 @@ header {
 
 header .wrapper,
 .banner-section .wrapper,
-.live-cameras-section .wrapper { 
+.live-cameras-section .wrapper,
+.dolor-section .wrapper { 
   width: 93%;
 }
 
@@ -298,10 +299,36 @@ h3 {
 .cities li { margin-bottom:  26px; }
 /*live-cameras section end*/
 
+/*dolor section start*/
+.dolor-section { 
+  padding: 60px 0;
+  background-color: #262936;
+}
 
+.dolor li { 
+  display: flex;
+  gap: 35px;
+}
 
+.dolor li span { 
+  color: #0888BE;
+  font-size: 20px;
+}
 
+h4 {
+  margin-bottom: 16px;
+  color: #F9F9FA;
+  font-size: 12px;
+}
 
+.info p {
+  color: #8D8F98;
+  font-size: 11.5px;
+  line-height: 18px;
+}
+
+.info figure img { max-width: 10px; }
+/*dolor section end*/
 
 /*=================================
   main styling ends here
