@@ -460,10 +460,11 @@ main { background: #1E202B; }
 .star-container .icon::before { 
   content: '\f005';
   color: #009AD8;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .star-container .last::before { color: #000; }
+.card-section { padding-bottom: 85px; }
 /*photo page style end*/
 /*=================================
   main styling ends here
@@ -563,6 +564,13 @@ footer p {
 }
 
 .info p { text-align: justify; }
+
+/*photo page*/
+.card-right p {
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 21px;
+
 }  
 
 /*media query for 540px starts here*/
@@ -589,6 +597,12 @@ footer p { font-size: 10px; }
 .feature-section .wrapper {
   width: 70%;
 }
+
+/*photo page*/
+.card { gap: 35px; }
+
+.card-right p,
+.card-right h4{ margin-bottom: 15px; }
 }  
 
 /*media query for 768px starts here*/
@@ -621,10 +635,7 @@ h4 { font-size: 14px; }
   line-height: 20px;
 }
 
-/* .dolor-section .wrapper,
-.feature-section .wrapper {
-  width: 86%;
-} */
+/*photo page*/
 } 
 
 
