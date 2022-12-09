@@ -453,6 +453,7 @@ main { background: #1E202B; }
   width: 13px;
   height: 13px;
   position: relative;
+  cursor: pointer;
 }
 
 .star-container { display: flex; }
