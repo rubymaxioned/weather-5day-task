@@ -570,8 +570,10 @@ footer p {
   margin-bottom: 10px;
   font-size: 13px;
   line-height: 21px;
-
 }  
+
+.bread-crumb { padding: 18px 6%; }
+}
 
 /*media query for 540px starts here*/
 @media only screen and (min-width: 540px) {
@@ -603,6 +605,8 @@ footer p { font-size: 10px; }
 
 .card-right p,
 .card-right h4{ margin-bottom: 15px; }
+
+.bread-crumb { padding: 18px 5%; }
 }  
 
 /*media query for 768px starts here*/
@@ -729,6 +733,9 @@ header .wrapper {
   font-size: 13px;
   line-height: 23px;
 }
+
+.bread-crumb { padding: 18px 4%; }
+.bread-crumb { padding: 18px 3%; }
 }  
 
 /*media query for 1024px starts here*/
@@ -828,4 +835,3 @@ footer p {
   gap: 120px;
 }
 } 
-}
