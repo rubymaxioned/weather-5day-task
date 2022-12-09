@@ -406,12 +406,22 @@ main { background: #1E202B; }
 .bread-crumb li:nth-of-type(1) a { color: #90939B; }
 .bread-crumb li:nth-of-type(2) { width: 10px; }
 .bread-crumb li:nth-of-type(3) a { color: #E7E7E8; }
-.card { padding-top: 60px; }
 
-.card li { display: flex; }
+.card { 
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card li { 
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
 .card-right h4 { 
-  margin-bottom: 7px;
+  margin-bottom: 9px;
   color: #E7E7E9;
   font-size: 15px;
   font-weight: 400;
@@ -433,12 +443,27 @@ main { background: #1E202B; }
 }
 
 .card-right p {
+  margin-bottom: 7px;
   color: #898B94;
   font-size: 12.3px;
-  line-height: 17px;
+  line-height: 18px;
 }
 
-.star::before { content: '\f005'; }
+.star { 
+  width: 13px;
+  height: 13px;
+  position: relative;
+}
+
+.star-container { display: flex; }
+
+.star-container .icon::before { 
+  content: '\f005';
+  color: #009AD8;
+  font-size: 13px;
+}
+
+.star-container .last::before { color: #000; }
 /*photo page style end*/
 /*=================================
   main styling ends here
