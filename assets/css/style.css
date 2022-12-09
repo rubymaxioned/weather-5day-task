@@ -417,7 +417,9 @@ h4 {
 .info-container h3 { margin-bottom: 10px; }
 
 .weather-info,
-.weather-info li { display: flex; }
+.weather-info li { 
+  display: flex;
+}
 
 .weather-info li figure{ flex-basis: 25%; }
 /*modal section end*/
