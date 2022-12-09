@@ -387,6 +387,21 @@ h4 {
 .text-container p { margin-bottom: 10px; }
 /*feature section end*/
 
+/*modal section start*/
+.modal-section .wrapper {
+  background-color: #323544;
+  box-shadow: rgb(17 12 46 / 15%) 0px 48px 100px 0px;
+}
+
+.modal-header {
+  padding: 5px;
+  background: #2D303D;background: #2D303D;
+  display: flex;
+  justify-content: space-between;
+  color: #A6A8B0;
+}
+/*modal section end*/
+
 /*photo page style start*/
 main { background: #1E202B; }
 
