@@ -380,6 +380,20 @@ h4 {
 
 .text-container p { margin-bottom: 10px; }
 /*feature section end*/
+
+/*photo page style start*/
+main { background: #1E202B; }
+
+.bread-crumb { 
+  padding: 18px 10%;
+  background: #262936;
+  border-radius: 50px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.bread-crumb li:nth-of-type(1) { color: #90939B; }
+/*photo page style end*/
 /*=================================
   main styling ends here
 =================================*/
