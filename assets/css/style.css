@@ -391,7 +391,7 @@ h4 {
 main { background: #1E202B; }
 
 .bread-crumb { 
-  padding: 18px 10%;
+  padding: 18px 7%;
   background: #262936;
   border-radius: 50px;
   font-size: 12px;
@@ -636,6 +636,16 @@ h4 { font-size: 14px; }
 }
 
 /*photo page*/
+.card-right h4 { font-size: 18px; }
+
+.card-right p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.card-right { padding: 30px 5%; }
+.card { gap: 40px; }
 } 
 
 
@@ -701,6 +711,24 @@ header .wrapper {
 .subscribe-form { flex-basis: 70%; }
 .subscribe { flex-basis: 15%; }
 .nav-menu li .active { color: #0C8AC1; }
+
+/*photo page*/
+.card { 
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card li {
+  flex-basis: 47%;
+  flex-grow: 1;
+}
+
+.card-right h4 { font-size: 16px; }
+
+.card-right p {
+  font-size: 13px;
+  line-height: 23px;
+}
 }  
 
 /*media query for 1024px starts here*/
@@ -800,4 +828,4 @@ footer p {
   gap: 120px;
 }
 } 
- 
+}
