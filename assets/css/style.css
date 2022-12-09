@@ -673,6 +673,35 @@ h4 { font-size: 13px; }
 
 .info p {font-size: 12.4px; }
 .info figure img { max-width: 11px; }
-/* .info p { line-height:  18px; } */
+.feature-section { padding: 68px 0 57px 0; }
+.text-container h4 { margin-bottom: 18px; }
+.application-container h2 { margin-bottom: 16px; }
+
+.application li figure,
+.weather li figure { max-width: 10.5px; }
+.weather li { gap: 7px; }
+
+.weather li p {
+  font-size: 13.5px;
+    flex-grow: 1;
 }
+
+.feature-section .wrapper { gap: 28px; }
+.awesome-container h2 { text-transform: capitalize; }
+.subscribe-form { flex-basis: 66%; }
+.subscribe { flex-basis: 13.5%; }
+footer { padding: 47px 0 50px; }
+.header-top { justify-content: flex-start; }
+.social-links { gap: 4px; }
+
+footer p {
+  font-size: 13px;
+  text-align: initial;
+}
+
+.header-top { 
+  padding-bottom: 0;
+  gap: 120px;
+}
+} 
  
