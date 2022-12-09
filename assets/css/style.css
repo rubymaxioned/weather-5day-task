@@ -463,7 +463,7 @@ main { background: #1E202B; }
   font-size: 14px;
 }
 
-.star-container .last::before { color: #000; }
+.star-container .last::before { color: #1E202B; }
 .card-section { padding-bottom: 85px; }
 /*photo page style end*/
 /*=================================
@@ -648,7 +648,7 @@ h4 { font-size: 14px; }
   line-height: 25px;
 }
 
-.card-right { padding: 30px 5%; }
+.card-right { padding: 25px 5%; }
 .card { gap: 40px; }
 } 
 
@@ -727,7 +727,7 @@ header .wrapper {
   flex-grow: 1;
 }
 
-.card-right h4 { font-size: 16px; }
+.card-right h4 { font-size: 15px; }
 
 .card-right p {
   font-size: 13px;
@@ -834,4 +834,25 @@ footer p {
   padding-bottom: 0;
   gap: 120px;
 }
+
+/*photo page*/
+.bread-crumb { padding: 21px 3%; }
+
+.card { 
+  padding-top: 65px;
+  gap: 28px;
+}
+
+.card-right { padding: 18px 3.3%; }
+.card-right h4 { margin-bottom: 8px; }
+
+.card-right p { 
+  margin-bottom: 12px;
+  line-height: 20px;
+}
+
+.star-container .icon::before { font-size: 15px; }
+.card-section { padding-bottom: 92px; }
+.card li { min-height: 178px; }
+.star-container { gap: 1px; }
 } 
