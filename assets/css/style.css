@@ -102,6 +102,12 @@ li {
 .bold { font-weight: bold; }
 .transition { transition: 1s all ease; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
@@ -402,10 +408,37 @@ main { background: #1E202B; }
 .bread-crumb li:nth-of-type(3) a { color: #E7E7E8; }
 .card { padding-top: 60px; }
 
-.card li { 
-  display: flex;
-  gap: 15px;
+.card li { display: flex; }
+
+.card-right h4 { 
+  margin-bottom: 7px;
+  color: #E7E7E9;
+  font-size: 15px;
+  font-weight: 400;
 }
+
+.card li figure,
+.card-right { flex-basis: 50%; }
+
+.card li figure { display: flex; }
+
+.card li figure img { 
+  object-fit: cover;
+  object-position: left; 
+}
+
+.card-right { 
+  padding: 15px 5%;
+  background: #262936;
+}
+
+.card-right p {
+  color: #898B94;
+  font-size: 12.3px;
+  line-height: 17px;
+}
+
+.star::before { content: '\f005'; }
 /*photo page style end*/
 /*=================================
   main styling ends here
