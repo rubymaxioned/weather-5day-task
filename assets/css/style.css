@@ -205,11 +205,14 @@ nav { padding-bottom: 40px; }
 .hamburger::before { transform: translateY(-3px); }
 .hamburger::after { transform: translateY(3px); } 
 
-.hamburger.open { transform: translateX(-10px) translateY(-2px) rotate(45deg); }
+.hamburger.open { transform: translateX(-6px) translateY(-1px) rotate(45deg); }
 .hamburger.open::before { opacity: 0; }
-.hamburger.open::after { transform: rotate(90deg); } */
+.hamburger.open::after { transform: rotate(90deg); }
 .hamburger .show { display: block; }
 .logo-container { display: flex; }
+.nav-menu { display: none; }
+.show { display: flex; }
+
 
 /*=================================
   Header styling ends here
