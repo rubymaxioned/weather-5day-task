@@ -5,14 +5,14 @@ var city = "mumbai";
 var key = "a2dbafd32bfb6d87a7dee017beec62d6";
 
 //Current day
-var day = document.querySelector('.day');
+var day = document.querySelector('.weather-header span:nth-of-type(1)');
 var today = new Date();
 var currentDay = today.getDay();
 var dayString = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 day.innerHTML = dayString[currentDay - 1];
 
 //Current Date
-var date = document.querySelector('.date');
+var date = document.querySelector('.weather-header span:nth-of-type(2)');
 var todayDate = today.getDate();
 var month = today.getMonth();
 var monthString = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
