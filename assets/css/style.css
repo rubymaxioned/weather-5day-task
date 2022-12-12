@@ -719,6 +719,7 @@ h4 { font-size: 14px; }
 .hamburger-toggle { display: none; }
 
 .nav-menu { 
+  display: flex;
   flex-direction: row;
   gap: 20px;
   background-color: #1E202B;
