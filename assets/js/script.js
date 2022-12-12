@@ -4,7 +4,7 @@ var navMenu = document.querySelector('.nav-menu');
 var navLink = document.querySelectorAll('.nav-menu li');
 var city = "mumbai";
 var key = "a2dbafd32bfb6d87a7dee017beec62d6";
-console.log(navLink);
+// console.log(navLink);
 
 //navigation
 navToggle.addEventListener('click', function () {
@@ -12,9 +12,9 @@ navToggle.addEventListener('click', function () {
     navMenu.classList.toggle('show');
 })
 
-navLink.forEach(function(li){
-    li.addEventListener('click',function(){
-        for(i=0; i<navLink.length; i++){
+navLink.forEach(function (li) {
+    li.addEventListener('click', function () {
+        for (i = 0; i < navLink.length; i++) {
             navLink[i].classList.remove('active');
         }
         li.classList.add('active');
@@ -27,7 +27,7 @@ var today = new Date();
 var currentDay = today.getDay();
 var dayString = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 day.innerHTML = dayString[currentDay];
-console.log(currentDay);
+// console.log(currentDay);
 
 //Current Date
 var date = document.querySelector('.weather-header span:nth-of-type(2)');
@@ -41,6 +41,7 @@ var searchCity = document.querySelector('.info-container h3');
 var temperature = document.querySelector('.temperature h2');
 var input = document.querySelector('.location input');
 var button = document.querySelector('.find');
+var figure = document.querySelector('.temperature figure');
 
 button.addEventListener('click', function () {
     city = "";
@@ -51,17 +52,25 @@ button.addEventListener('click', function () {
 function myFunction() {
     var p = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`);
     p.then(function (response) {
-        console.log(response.status);
+        // console.log(response.status);
         return response.json();
     }).then(function (value) {
         console.log(value);
+        var info = document.querySelector('.info-container');
+        var error = document.querySelector('.error-message');
         if (value.cod == 200) {
+
+            if(info.classList.contains('hide')){
+                info.classList.remove('hide');
+            }
+            error.classList.add('hide');
             searchCity.innerHTML = value.name;
             var temp = value.main.temp;
             var currentTemp = temp - 273.15;
             temperature.innerHTML = currentTemp.toFixed(2) + '&#8451;';
 
             var tempIcon = document.querySelector('.temperature figure img');
+            // console.log(tempIcon);
             var icon = value.weather[0].main;
             if (icon == "Drizzle") {
                 tempIcon.src = "./assets/images/icons/icon-9.svg";
@@ -85,13 +94,25 @@ function myFunction() {
             humidity.innerHTML = value.main.humidity + "%";
             speed.innerHTML = value.wind.speed + "m/sec";
             direction.innerHTML = value.wind.deg;
-            console.log(direction);
+            // console.log(direction);
         }
         if (value.cod == 404) {
-            temperature.innerHTML = "Please type correct city name";
-            temperature.classList.add('change');
-            searchCity.classList.add('hide');
-            // humidity.innerHTML = "";
+            console.log(value.message);
+  
+
+            info.classList.add('hide');
+            error.classList.remove('hide');
+            error.innerText = value.message;
+            console.log(info);
+
+            //     temperature.innerHTML = "Please Enter Valid city name";
+            //     temperature.classList.add('change');
+            //     searchCity.classList.add('visible');
+            //     figure.classList.add('hide');
+            //     console.log(info.length);
+            //     for(var j=0; j<info.length; j++){
+            //         info[j].classList.add('visible');
+            //     }
         }
 
     })
