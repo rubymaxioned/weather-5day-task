@@ -342,6 +342,13 @@ main { position: relative; }
   top: 167px;
 }
 
+.error-message { padding: 25px 10%; }
+
+.error-message h2 {
+  font-size: 20px;
+  color: #009AD8;
+}
+
 .temperature figure { min-width: 30%; }
 .weather-info li:nth-of-type(3) { text-transform: capitalize; }
 .weather-info li:nth-of-type(2) figure { flex-basis: 23%; } 
