@@ -12,7 +12,7 @@ navToggle.addEventListener('click', function () {
     navMenu.classList.toggle('show');
 })
 
-navLink.forEach(function(li,index){
+navLink.forEach(function(li){
     li.addEventListener('click',function(){
         for(i=0; i<navLink.length; i++){
             navLink[i].classList.remove('active');
@@ -39,7 +39,7 @@ date.innerHTML = `${todayDate} ${monthString[month]}`;
 //Weather Information
 var searchCity = document.querySelector('.info-container h3');
 var temperature = document.querySelector('.temperature h2');
-input = document.querySelector('.location input');
+var input = document.querySelector('.location input');
 var button = document.querySelector('.find');
 
 button.addEventListener('click', function () {
@@ -88,7 +88,10 @@ function myFunction() {
             console.log(direction);
         }
         if (value.cod == 404) {
-            searchCity.innerHTML = "Searched City Not Found";
+            temperature.innerHTML = "Please type correct city name";
+            temperature.classList.add('change');
+            searchCity.classList.add('hide');
+            // humidity.innerHTML = "";
         }
 
     })
