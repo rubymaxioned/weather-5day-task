@@ -731,11 +731,6 @@ h4 { font-size: 14px; }
   border: 2px solid transparent;
 }
 
-.active { 
-  border: 2px solid #0C8AC1;
-  border-radius: 15px;
-}
-
 header .wrapper { 
   display: flex;
   justify-content: space-between;
@@ -776,7 +771,11 @@ header .wrapper {
 
 .subscribe-form { flex-basis: 70%; }
 .subscribe { flex-basis: 15%; }
-.nav-menu li .active { color: #0C8AC1; }
+
+.nav-menu li.active { 
+  border: 2px solid #0C8AC1;
+  border-radius: 15px;
+}
 
 /*photo page*/
 .card { 
