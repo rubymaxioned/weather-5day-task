@@ -352,7 +352,7 @@ main { position: relative; }
 
 /*live-cameras section start*/
 .live-cameras-section { 
-  padding: 277px 0;
+  padding: 277px 0 60px;
   background-color: #1E202B;
 }
 
