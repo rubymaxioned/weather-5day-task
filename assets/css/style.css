@@ -226,7 +226,7 @@ nav { padding-bottom: 40px; }
 =================================*/
 /*banner section start*/
 .banner-section {
-  min-height: 240px;
+  min-height: 296px;
   padding-top: 60px;
   background: url(/assets/images/banner@2x.png) no-repeat left bottom/cover;
 }
@@ -270,39 +270,59 @@ form {
 
 /*weather section start*/
 .weather-section .wrapper {
-  background-color: #323544;
+  border-radius: 10px;
   box-shadow: rgb(17 12 46 / 15%) 0px 48px 100px 0px;
+  background-color: #323544;
+  overflow: hidden;
 }
 
 .weather-header {
-  padding: 5px;
+  padding: 10px 3%;
   background: #2D303D;background: #2D303D;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   color: #A6A8B0;
+  font-size: 13px;
+  justify-content: space-between;
+  text-transform: capitalize;
 }
 
-.info-container { padding: 20px 7%; }
+.info-container { padding: 25px 7%; }
 
 .temperature h2 {
   margin-bottom: 0;
-  font-size: 45px;
+  font-size: 75px;
+  font-weight: 600;
 }
 
 .temperature {
+  margin-bottom: 7px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   gap: 15px;
 }
 
-.info-container h3 { margin-bottom: 10px; }
+.info-container h3 { 
+  margin-bottom: 13px;
+  color: #B6B8BF;
+  font-size: 15px;
+}
 
 .weather-info,
 .weather-info li { 
   display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
 .weather-info li figure{ flex-basis: 25%; }
+
+.weather-info li span { 
+  color: #868893;
+  font-size: 13px;
+ }
+
 main { position: relative; }
 
 .weather-section {
@@ -311,11 +331,13 @@ main { position: relative; }
   top: 167px;
 }
 
+.temperature figure { min-width: 30%; }
+
 /*weather section end*/
 
 /*live-cameras section start*/
 .live-cameras-section { 
-  padding: 60px 0;
+  padding: 90% 0;
   background-color: #1E202B;
 }
 
