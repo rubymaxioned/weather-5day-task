@@ -1,13 +1,24 @@
 var navToggle = document.querySelector('.hamburger-toggle');
 var hamburger = document.querySelector('.hamburger');
 var navMenu = document.querySelector('.nav-menu');
+var navLink = document.querySelectorAll('.nav-menu li');
 var city = "mumbai";
 var key = "a2dbafd32bfb6d87a7dee017beec62d6";
+console.log(navLink);
 
 //navigation
 navToggle.addEventListener('click', function () {
     hamburger.classList.toggle('open');
     navMenu.classList.toggle('show');
+})
+
+navLink.forEach(function(li,index){
+    li.addEventListener('click',function(){
+        for(i=0; i<navLink.length; i++){
+            navLink[i].classList.remove('active');
+        }
+        li.classList.add('active');
+    })
 })
 
 //Current day
