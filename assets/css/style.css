@@ -213,7 +213,10 @@ nav { padding-bottom: 40px; }
 .nav-menu { display: none; }
 .show { display: flex; }
 
-
+.nav-menu li.active a{ 
+  color: #0C8AC1;
+  border-radius: 15px;
+}
 /*=================================
   Header styling ends here
 =================================*/  
