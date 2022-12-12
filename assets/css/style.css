@@ -321,6 +321,7 @@ form {
 .weather-info li span { 
   color: #868893;
   font-size: 13px;
+  font-weight: 600;
  }
 
 main { position: relative; }
@@ -333,8 +334,10 @@ main { position: relative; }
 
 .temperature figure { min-width: 30%; }
 .weather-info li:nth-of-type(3) { text-transform: capitalize; }
-.weather-info li figure:nth-of-type(1) { flex-basis: 27%; }
+/* .weather-info li:nth-of-type(1) figure { flex-basis: 27%; }*/
 
+.weather-info li:nth-of-type(2) figure { flex-basis: 23%; } 
+.weather-info li:nth-of-type(3) figure { flex-basis: 27%; } 
 /*weather section end*/
 
 /*live-cameras section start*/
@@ -818,6 +821,7 @@ header .wrapper {
 }
 
 .temperature figure { min-width: 20%; }
+header { padding-top: 45px; }
 /*photo page*/
 .card { 
   flex-direction: row;
@@ -865,7 +869,7 @@ header { padding-top: 44px; }
   font-weight: 800;
 }
 
-h1 { font-size: 16px; }
+h1 { font-size: 15.5px; }
 .mobile-nav { padding-bottom: 52px; }
 
 .location input,
