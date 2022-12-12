@@ -226,7 +226,7 @@ nav { padding-bottom: 40px; }
 =================================*/
 /*banner section start*/
 .banner-section {
-  min-height: 240px;
+  min-height: 296px;
   padding-top: 60px;
   background: url(/assets/images/banner@2x.png) no-repeat left bottom/cover;
 }
@@ -241,11 +241,21 @@ form {
 
 .location input,
 .email input { 
+  width: 100%;
   padding: 15px 0 15px 10%;
   border: none;
   border-radius: 30px;
   outline: none;
   background-color: #1E202B;
+  color: #fff;
+}
+
+.location,
+.email { flex-grow: 1; }
+/* ::placeholder .capital { color: red; } */
+.location input:focus { 
+  background-color: transparent; 
+  /* color: #fff; */
 }
 
 /* .location { flex-basis: 40%; } */
@@ -270,39 +280,60 @@ form {
 
 /*weather section start*/
 .weather-section .wrapper {
-  background-color: #323544;
+  border-radius: 10px;
   box-shadow: rgb(17 12 46 / 15%) 0px 48px 100px 0px;
+  background-color: #323544;
+  overflow: hidden;
 }
 
 .weather-header {
-  padding: 5px;
+  padding: 10px 3%;
   background: #2D303D;background: #2D303D;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   color: #A6A8B0;
+  font-size: 13px;
+  justify-content: space-between;
+  text-transform: capitalize;
 }
 
-.info-container { padding: 20px 7%; }
+.info-container { padding: 25px 7%; }
 
 .temperature h2 {
   margin-bottom: 0;
-  font-size: 45px;
+  font-size: 75px;
+  font-weight: 600;
 }
 
 .temperature {
+  margin-bottom: 7px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   gap: 15px;
 }
 
-.info-container h3 { margin-bottom: 10px; }
+.info-container h3 { 
+  margin-bottom: 16px;
+  color: #B6B8BF;
+  font-size: 15px;
+}
 
 .weather-info,
 .weather-info li { 
   display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
 .weather-info li figure{ flex-basis: 25%; }
+
+.weather-info li span { 
+  color: #868893;
+  font-size: 13px;
+  font-weight: 600;
+ }
+
 main { position: relative; }
 
 .weather-section {
@@ -311,11 +342,17 @@ main { position: relative; }
   top: 167px;
 }
 
+.temperature figure { min-width: 30%; }
+.weather-info li:nth-of-type(3) { text-transform: capitalize; }
+/* .weather-info li:nth-of-type(1) figure { flex-basis: 27%; }*/
+
+.weather-info li:nth-of-type(2) figure { flex-basis: 23%; } 
+.weather-info li:nth-of-type(3) figure { flex-basis: 27%; } 
 /*weather section end*/
 
 /*live-cameras section start*/
 .live-cameras-section { 
-  padding: 60px 0;
+  padding: 277px 0;
   background-color: #1E202B;
 }
 
@@ -567,7 +604,7 @@ footer p {
   line-height: 20px;
 }
 
-.email input::placeholder { font-size: 11px; }
+/* .email input::placeholder { font-size: 11px; } */
 
 input:focus { color: #fff; }
 .capital::first-letter { text-transform: capitalize;}
@@ -617,6 +654,11 @@ footer p {
 
 .info p { text-align: justify; }
 
+.location input,
+.email input {
+  padding: 15px 0 15px 6%;
+}
+
 /*photo page*/
 .card-right p {
   margin-bottom: 10px;
@@ -651,6 +693,8 @@ footer p { font-size: 10px; }
 .feature-section .wrapper {
   width: 70%;
 }
+
+.weather-section .wrapper { width: 60%; }
 
 /*photo page*/
 .card { gap: 35px; }
@@ -702,6 +746,16 @@ h4 { font-size: 14px; }
   border: 2px solid;
   background-color: #000;
   color: #0888BE;
+}
+
+.weather-section .wrapper { width: 45%; }
+.weather-header { font-size: 15px; }
+.info-container h3 { font-size: 20px; }
+.temperature h2  { font-size: 85px; }
+
+.location input,
+.email input {
+  padding: 15px 0 15px 4%;
 }
 /*photo page*/
 .card-right h4 { font-size: 18px; }
@@ -780,6 +834,16 @@ header .wrapper {
   border-radius: 15px;
 }
 
+.temperature { 
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.temperature figure { min-width: 20%; }
+header { padding-top: 45px; }
+
+.location input { padding: 15px 0 15px 3%; }
 /*photo page*/
 .card { 
   flex-direction: row;
@@ -827,13 +891,11 @@ header { padding-top: 44px; }
   font-weight: 800;
 }
 
-h1 { font-size: 16px; }
+h1 { font-size: 15.5px; }
 .mobile-nav { padding-bottom: 52px; }
 
-.location input,
-.email input {
-  padding: 19px 0 19px 10%;
-}
+.location input { padding: 19px 0 19px 2%; }
+.email input { padding: 19px 0 19px 3%; }
 
 .banner-section { padding-top: 65px; }
 
@@ -847,7 +909,7 @@ h1 { font-size: 16px; }
   padding: 14px 0;
 }
 
-.banner-section { min-height: 330px; }
+.banner-section { min-height: 328px; }
 .live-cameras-section { padding-top: 17.5%; }
 h2 { font-size: 33px; }
 .cities { gap: 28px; }
@@ -898,6 +960,25 @@ footer p {
   padding-bottom: 0;
   gap: 120px;
 }
+
+.weather-section { top: 187px; }
+.weather-section .wrapper { width: 39.5%; }
+
+.weather-header { 
+  padding: 10px 2%;
+  font-size: 13px;
+}
+
+.info-container { padding: 32px 3.5%; }
+.info-container h3 { font-size: 17.2px; }
+.temperature h2 { font-size: 84px; }
+
+.temperature { 
+  margin-bottom: 14px;
+  gap: 35px;
+}
+
+.temperature figure { min-width: 16%; }
 
 /*photo page*/
 .bread-crumb { padding: 21px 3%; }
