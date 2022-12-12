@@ -241,11 +241,21 @@ form {
 
 .location input,
 .email input { 
+  width: 100%;
   padding: 15px 0 15px 10%;
   border: none;
   border-radius: 30px;
   outline: none;
   background-color: #1E202B;
+  color: #fff;
+}
+
+.location,
+.email { flex-grow: 1; }
+/* ::placeholder .capital { color: red; } */
+.location input:focus { 
+  background-color: transparent; 
+  /* color: #fff; */
 }
 
 /* .location { flex-basis: 40%; } */
@@ -594,7 +604,7 @@ footer p {
   line-height: 20px;
 }
 
-.email input::placeholder { font-size: 11px; }
+/* .email input::placeholder { font-size: 11px; } */
 
 input:focus { color: #fff; }
 .capital::first-letter { text-transform: capitalize;}
@@ -643,6 +653,11 @@ footer p {
 }
 
 .info p { text-align: justify; }
+
+.location input,
+.email input {
+  padding: 15px 0 15px 6%;
+}
 
 /*photo page*/
 .card-right p {
@@ -737,6 +752,11 @@ h4 { font-size: 14px; }
 .weather-header { font-size: 15px; }
 .info-container h3 { font-size: 20px; }
 .temperature h2  { font-size: 85px; }
+
+.location input,
+.email input {
+  padding: 15px 0 15px 4%;
+}
 /*photo page*/
 .card-right h4 { font-size: 18px; }
 
@@ -822,6 +842,8 @@ header .wrapper {
 
 .temperature figure { min-width: 20%; }
 header { padding-top: 45px; }
+
+.location input { padding: 15px 0 15px 3%; }
 /*photo page*/
 .card { 
   flex-direction: row;
@@ -872,10 +894,8 @@ header { padding-top: 44px; }
 h1 { font-size: 15.5px; }
 .mobile-nav { padding-bottom: 52px; }
 
-.location input,
-.email input {
-  padding: 19px 0 19px 10%;
-}
+.location input { padding: 19px 0 19px 2%; }
+.email input { padding: 19px 0 19px 3%; }
 
 .banner-section { padding-top: 65px; }
 
@@ -959,6 +979,7 @@ footer p {
 }
 
 .temperature figure { min-width: 16%; }
+
 /*photo page*/
 .bread-crumb { padding: 21px 3%; }
 
