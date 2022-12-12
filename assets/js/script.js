@@ -52,9 +52,6 @@ function myFunction() {
     var p = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`);
     p.then(function (response) {
         console.log(response.status);
-        // if (response.status == 404) {
-        //     console.log(error.message);
-        // }
         return response.json();
     }).then(function (value) {
         console.log(value);
