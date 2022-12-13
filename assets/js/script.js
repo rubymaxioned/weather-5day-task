@@ -7,9 +7,6 @@ var navToggle = document.querySelector('.hamburger-toggle'),
 
 //navigation
 navToggle.addEventListener('click', function () {
-    // if(navMenu.classList.contains('hide')){
-    //     navMenu.classList.remove('hide');
-    // }
     hamburger.classList.toggle('open');
     navMenu.classList.toggle('hide');
 })
@@ -38,7 +35,7 @@ var date = document.querySelector('.weather-header span:nth-of-type(2)');
     month = today.getMonth();
     monthString = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     
-date.innerHTML = `${todayDate} ${monthString[month]}`;
+    date.innerHTML = todayDate + " " + monthString[month];
 
 //Weather Information
 var searchCity = document.querySelector('.info-container h3'),
@@ -86,7 +83,7 @@ function myFunction() {
 
             error.classList.add('hide');
             searchCity.innerHTML = value.name;
-            temperature.innerHTML = currentTemp.toFixed(2) + '&#8451;';
+            temperature.innerHTML = currentTemp.toFixed(1) + '&#8451;';
 
             if (icon == "Drizzle") {
                 tempIcon.src = "./assets/images/icons/icon-9.svg";
@@ -100,8 +97,11 @@ function myFunction() {
                 tempIcon.src = "./assets/images/icons/icon-3.svg";
             } else if (icon == "Clouds") {
                 tempIcon.src = "./assets/images/icons/icon-5.svg";
-            } else {
+            }  else if (icon == "Mist" || "Smoke" || "Haze") {
                 tempIcon.src = "./assets/images/icons/icon-7.svg";
+            }
+            else {
+                tempIcon.src = "./assets/images/icons/icon-1.svg";
             }
 
             humidity.innerHTML = value.main.humidity + "%";
