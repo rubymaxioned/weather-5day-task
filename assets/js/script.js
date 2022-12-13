@@ -7,8 +7,11 @@ var navToggle = document.querySelector('.hamburger-toggle'),
 
 //navigation
 navToggle.addEventListener('click', function () {
+    // if(navMenu.classList.contains('hide')){
+    //     navMenu.classList.remove('hide');
+    // }
     hamburger.classList.toggle('open');
-    navMenu.classList.toggle('show');
+    navMenu.classList.toggle('hide');
 })
 
 navLink.forEach(function (li) {
