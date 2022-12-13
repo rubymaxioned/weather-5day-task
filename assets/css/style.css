@@ -122,7 +122,7 @@ header {
   background-color: #1E202B;
 }
 
-.wrapper { width: 92%;}
+.wrapper { min-width: 92%;}
 
 h1 {
   margin-bottom: 6px;
@@ -136,7 +136,7 @@ h1 {
 }
 
 .mobile-nav {
-  padding-bottom: 33px;
+  padding-bottom: 27px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -157,11 +157,10 @@ h1 {
   background: #262936;
   font-size: 13px;
   text-align: center;
-  text-transform: capitalize;
 }
 
 .nav-menu li { 
-  padding: 20px 0;
+  padding: 18px 0;
   border-bottom: 1px solid #363944;
 }
 
@@ -170,8 +169,8 @@ h1 {
 nav { padding-bottom: 40px; }
 
 .hamburger-toggle { 
-  max-width: 13px;
-  min-height: 13px;
+  max-width: 47px;
+  min-height: 50px;
   padding: 16px;
   border: 2px solid #048BC3;
   border-radius: 50%;
@@ -188,8 +187,8 @@ nav { padding-bottom: 40px; }
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  width: 12px;
-  height: 2px;
+  min-width: 10px;
+  min-height: 2px;
   position: absolute;
   background-color: #048BC3;
   transition: 100ms ease-in-out;
@@ -208,7 +207,7 @@ nav { padding-bottom: 40px; }
 .hamburger.open::after { transform: rotate(90deg); }
 .hamburger .show { display: block; }
 .logo-container { display: flex; }
-.nav-menu { display: none; }
+/* .nav-menu { display: none; } */
 .show { display: flex; }
 
 .nav-menu li.active a{ 
@@ -549,8 +548,8 @@ main { background: #1E202B; }
 }
 
 .star { 
-  width: 13px;
-  height: 13px;
+  min-width: 13px;
+  max-height: 13px;
   position: relative;
   cursor: pointer;
 }
@@ -579,8 +578,8 @@ footer {
 }
 
 .social-links li a {
-  width: 35px;
-  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
   border-radius: 50%;
   position: relative;
   background-color: #1E202B;
@@ -615,6 +614,7 @@ footer p {
   line-height: 20px;
 }
 
+.email input::placeholder { font-size: 11.5px; }
 input:focus { color: #fff; }
 .capital::first-letter { text-transform: capitalize;}
  /*=================================
@@ -624,7 +624,7 @@ input:focus { color: #fff; }
 /*media query starts*/
 /*media query for 480px starts here*/
 @media only screen and (min-width: 480px) {
-.wrapper { width: 86%; }
+.wrapper { max-width: 86%; }
 
 .find,
 .subscribe {
@@ -680,7 +680,7 @@ footer p {
 
 /*media query for 540px starts here*/
 @media only screen and (min-width: 540px) {
-.wrapper { width: 75%; }
+.wrapper { max-width: 75%; }
 h3 { font-size: 15px; }
 .cities li span { font-size: 10px; }
 .cities li { margin-bottom: 35px; }
@@ -716,7 +716,7 @@ footer p { font-size: 10px; }
 
 /*media query for 768px starts here*/
 @media only screen and (min-width: 768px) {
-.wrapper { width: 86%; }
+.wrapper { max-width: 86%; }
 
 .cities {
   flex-direction: row;
@@ -871,7 +871,6 @@ header { padding-top: 45px; }
   line-height: 23px;
 }
 
-.bread-crumb { padding: 18px 4%; }
 .bread-crumb { padding: 18px 3%; }
 }  
 
@@ -880,7 +879,7 @@ header { padding-top: 45px; }
 .wrapper,
 .dolor-section .wrapper,
 .feature-section .wrapper { 
-  width: 79%;
+  max-width: 79%;
 }
 
 header { padding-top: 44px; }
