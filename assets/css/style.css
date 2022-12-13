@@ -335,7 +335,7 @@ main { position: relative; }
   top: 167px;
 }
 
-.error-message { padding: 25px 10%; }
+.error-message { padding: 75px 15%; }
 
 .error-message h2 {
   color: #009AD8;
