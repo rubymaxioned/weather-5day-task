@@ -647,7 +647,7 @@ input:focus { color: #fff; }
 .weather-container { margin-bottom: 15px; }
 .weather li { gap: 15px; }
 .awesome-container h2 { margin-bottom: 25px; }
-.header-top { padding-bottom: 10px; }
+.footer-top { padding-bottom: 10px; }
 
 footer p {
   font-size: 9px;
@@ -835,7 +835,7 @@ header .wrapper {
   flex-grow: 1;
 }
 
-.header-top {
+.footer-top {
   display: flex;
   justify-content: space-between;
 }
@@ -956,7 +956,7 @@ h4 { font-size: 13px; }
 .subscribe-form { flex-basis: 66%; }
 .subscribe { flex-basis: 13.5%; }
 footer { padding: 47px 0 60px; }
-.header-top { justify-content: flex-start; }
+.footer-top { justify-content: flex-start; }
 .social-links { gap: 4px; }
 
 footer p {
@@ -964,7 +964,7 @@ footer p {
   text-align: initial;
 }
 
-.header-top { 
+.footer-top { 
   padding-bottom: 0;
   gap: 120px;
 }
