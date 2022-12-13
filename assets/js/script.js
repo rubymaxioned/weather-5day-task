@@ -108,7 +108,7 @@ function myFunction() {
             speed.innerHTML = value.wind.speed + "m/sec";
             direction.innerHTML = value.wind.deg;
         }
-        if (value.cod == 404) {
+        if (value.cod == 404 || value.cod == 400) {
             info.classList.add('hide');
             error.classList.remove('hide');
         }
