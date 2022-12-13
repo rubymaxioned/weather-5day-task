@@ -325,7 +325,7 @@ form {
   color: #868893;
   font-size: 13px;
   font-weight: 600;
- }
+}
 
 main { position: relative; }
 
@@ -756,7 +756,7 @@ h4 { font-size: 14px; }
   color: #0888BE;
 }
 
-.weather-section .wrapper { width: 45%; }
+.weather-section .wrapper { width: 55%; }
 .weather-header { font-size: 15px; }
 .info-container h3 { font-size: 20px; }
 .temperature h2  { font-size: 85px; }
@@ -772,6 +772,8 @@ h4 { font-size: 14px; }
   cursor: pointer; 
   transform: scale(1.5);
  }
+
+ .logo-container { cursor: pointer; }
 /*photo page*/
 .card-right h4 { font-size: 18px; }
 
@@ -987,6 +989,7 @@ footer p {
 }
 
 .temperature figure { min-width: 16%; }
+.email input::placeholder { font-size: 12.5px; }
 
 /*photo page*/
 .bread-crumb { padding: 21px 3%; }
@@ -1009,3 +1012,38 @@ footer p {
 .card li { min-height: 178px; }
 .star-container { gap: 1px; }
 } 
+
+/*media query for 1500px starts here*/
+@media only screen and (min-width: 1500px) {
+.weather-header { font-size: 16px; }
+.info-container h3 { font-size: 20px; }
+
+.weather-info li span,
+.nav-menu li a,
+.info h4 { 
+  font-size: 15px; 
+}
+
+h1 { font-size: 17px; }
+.img-container h3 { font-size: 18px; }
+.cities li span { font-size: 11px; }
+
+.info p,
+.text-container h4,
+.text-container p {
+  font-size: 14px;
+  line-height: 23px;
+}
+
+footer p { font-size: 14px; }
+.social-links { gap: 10px; }
+
+/*photo page*/
+.bread-crumb { font-size: 15px; }
+.card-right h4 { font-size: 17px; }
+
+.card-right p {
+  font-size: 14px;
+  line-height: 25px;
+}
+}
