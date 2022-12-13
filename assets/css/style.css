@@ -207,7 +207,6 @@ nav { padding-bottom: 40px; }
 .hamburger.open::after { transform: rotate(90deg); }
 .hamburger .show { display: block; }
 .logo-container { display: flex; }
-/* .nav-menu { display: none; } */
 .show { display: flex; }
 
 .nav-menu li.active a{ 
@@ -766,6 +765,13 @@ h4 { font-size: 14px; }
 .email input {
   padding: 15px 0 15px 4%;
 }
+
+.nav-menu li a:hover { color: #0C8AC1; }
+
+.info figure img:hover {
+  cursor: pointer; 
+  transform: scale(1.5);
+ }
 /*photo page*/
 .card-right h4 { font-size: 18px; }
 
