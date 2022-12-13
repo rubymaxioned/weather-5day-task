@@ -224,7 +224,7 @@ nav { padding-bottom: 40px; }
 .banner-section {
   min-height: 296px;
   padding-top: 60px;
-  background: url(/assets/images/banner@2x.png) no-repeat left bottom/cover;
+  background: url(../images/banner@2x.png) no-repeat left bottom/cover;
 }
 
 form { 
