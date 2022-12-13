@@ -26,8 +26,7 @@ var day = document.querySelector('.weather-header span:nth-of-type(1)'),
     currentDay = today.getDay(),
     dayString = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-day.innerHTML = dayString[currentDay];
-// console.log(currentDay);
+    day.innerHTML = dayString[currentDay];
 
 //Current Date
 var date = document.querySelector('.weather-header span:nth-of-type(2)');
@@ -61,7 +60,6 @@ var form = document.querySelectorAll('form');
 function myFunction() {
     var p = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`);
     p.then(function (response) {
-        // console.log(response.status);
         return response.json();
     }).then(function (value) {
         var info = document.querySelector('.info-container');
@@ -106,13 +104,14 @@ function myFunction() {
 
             humidity.innerHTML = value.main.humidity + "%";
             speed.innerHTML = value.wind.speed + "m/sec";
-            direction.innerHTML = value.wind.deg;
+            direction.innerHTML = value.wind.deg + "deg";
         }
+
         if (value.cod == 404 || value.cod == 400) {
             info.classList.add('hide');
             error.classList.remove('hide');
         }
-
+        
     })
 }
 myFunction();
