@@ -2,6 +2,7 @@ var navToggle = document.querySelector('.hamburger-toggle'),
     hamburger = document.querySelector('.hamburger'),
     navMenu = document.querySelector('.nav-menu'),
     navLink = document.querySelectorAll('.nav-menu li'),
+    input = document.querySelector('.location input'),
     city = "mumbai",
     key = "a2dbafd32bfb6d87a7dee017beec62d6";
 
@@ -20,50 +21,75 @@ navLink.forEach(function (li) {
     })
 })
 
+//removing white space after footer
+window.addEventListener('resize', function () {
+    // button.addEventListener('click', function () {
+    var header = document.querySelector("header");
+    var footer = document.querySelector("footer");
+    var main = document.querySelector("main");
+    var windowHeight = window.innerHeight;
+    var height = windowHeight - (header.offsetHeight + footer.offsetHeight);
+    main.style.minHeight = height + "px";
+    console.log(windowHeight);
+    // city = "";
+    // city += input.value;
+    // weatherInfo();
+    // })
+})
+
 //Current day
 var day = document.querySelector('.weather-header span:nth-of-type(1)'),
     today = new Date(),
     currentDay = today.getDay(),
     dayString = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-    day.innerHTML = dayString[currentDay];
+day.innerHTML = dayString[currentDay];
 
 //Current Date
 var date = document.querySelector('.weather-header span:nth-of-type(2)');
-    todayDate = today.getDate();
-    month = today.getMonth();
-    monthString = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    
-    date.innerHTML = todayDate + " " + monthString[month];
+todayDate = today.getDate();
+month = today.getMonth();
+monthString = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+date.innerHTML = todayDate + " " + monthString[month];
 
 //Weather Information
 var searchCity = document.querySelector('.info-container h3'),
     temperature = document.querySelector('.temperature h2'),
-    input = document.querySelector('.location input'),
     button = document.querySelector('.find'),
     figure = document.querySelector('.temperature figure');
 
+//on button click
 button.addEventListener('click', function () {
     city = "";
     city += input.value;
-    myFunction();
+    weatherInfo();
+})
+
+//on enter
+input.addEventListener('keydown', function (e) {
+    city = "";
+    city += input.value;
+    if (e.code == "Enter") {
+        weatherInfo();
+    }
 })
 
 //form
 var form = document.querySelectorAll('form');
-    form.forEach(function(list){
-        list.addEventListener("submit", function (e) {
+form.forEach(function (list) {
+    list.addEventListener("submit", function (e) {
         e.preventDefault();
-        })
+    })
 })
 
-function myFunction() {
-    var p = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`);
+function weatherInfo() {
+    var p = fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + key);
     p.then(function (response) {
         return response.json();
     }).then(function (value) {
         var info = document.querySelector('.info-container');
-            error = document.querySelector('.error-message');
+        error = document.querySelector('.error-message');
 
         if (value.cod == 200) {
 
@@ -75,7 +101,7 @@ function myFunction() {
                 speed = document.querySelector('.weather-info li:nth-of-type(2) span'),
                 direction = document.querySelector('.weather-info li:nth-of-type(3) span');
 
-            if(info.classList.contains('hide')){
+            if (info.classList.contains('hide')) {
                 info.classList.remove('hide');
             }
 
@@ -95,7 +121,7 @@ function myFunction() {
                 tempIcon.src = "./assets/images/icons/icon-3.svg";
             } else if (icon == "Clouds") {
                 tempIcon.src = "./assets/images/icons/icon-5.svg";
-            }  else if (icon == "Mist" || "Smoke" || "Haze") {
+            } else if (icon == "Mist" || "Smoke" || "Haze") {
                 tempIcon.src = "./assets/images/icons/icon-7.svg";
             }
             else {
@@ -111,7 +137,8 @@ function myFunction() {
             info.classList.add('hide');
             error.classList.remove('hide');
         }
-        
+
     })
 }
-myFunction();
+weatherInfo();
+
