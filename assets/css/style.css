@@ -405,6 +405,11 @@ h3 {
   font-weight: 400;
   text-transform: capitalize;
 }
+
+.city-name { 
+  display: flex;
+  flex-direction: column;
+}
 /*live-cameras section end*/
 
 /*dolor section start*/
