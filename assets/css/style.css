@@ -398,6 +398,13 @@ h3 {
 }
 
 .cities li { margin-bottom:  26px; }
+
+.cities li span:nth-of-type(1) {
+  color: #EFEFF0;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
 /*live-cameras section end*/
 
 /*dolor section start*/
