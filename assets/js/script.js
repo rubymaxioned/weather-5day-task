@@ -23,19 +23,23 @@ navLink.forEach(function (li) {
 
 //removing white space after footer
 window.addEventListener('resize', function () {
-    // button.addEventListener('click', function () {
-    var header = document.querySelector("header");
-    var footer = document.querySelector("footer");
-    var main = document.querySelector("main");
-    var windowHeight = window.innerHeight;
-    var height = windowHeight - (header.offsetHeight + footer.offsetHeight);
+    removeWhiteSpace();
+})
+
+window.addEventListener('load', function () {
+    removeWhiteSpace();
+})
+
+function removeWhiteSpace() {
+    var header = document.querySelector("header"),
+        footer = document.querySelector("footer"),
+        main = document.querySelector("main"),
+        windowHeight = window.innerHeight,
+        height = windowHeight - (header.offsetHeight + footer.offsetHeight);
+        
     main.style.minHeight = height + "px";
     console.log(windowHeight);
-    // city = "";
-    // city += input.value;
-    // weatherInfo();
-    // })
-})
+}
 
 //Current day
 var day = document.querySelector('.weather-header span:nth-of-type(1)'),
