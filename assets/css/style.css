@@ -182,6 +182,9 @@ nav { padding-bottom: 40px; }
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  text-indent: -9999px;
+  font-size: 2px;
+  left: 50%;
 }
 
 .hamburger,
@@ -198,6 +201,7 @@ nav { padding-bottom: 40px; }
 .hamburger::after {
   content: '';
   position: absolute;
+  left: 0;
 }
 
 .hamburger::before { transform: translateY(-3px); }
@@ -398,6 +402,18 @@ h3 {
 }
 
 .cities li { margin-bottom:  26px; }
+
+.cities li span:nth-of-type(1) {
+  color: #EFEFF0;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.city-name { 
+  display: flex;
+  flex-direction: column;
+}
 /*live-cameras section end*/
 
 /*dolor section start*/
@@ -480,6 +496,13 @@ h4 {
 }
 
 .text-container p { margin-bottom: 10px; }
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather { width: 70%; }
 /*feature section end*/
 
 /*photo page style start*/
@@ -858,8 +881,9 @@ header .wrapper {
 
 .temperature figure { min-width: 20%; }
 header { padding-top: 45px; }
-
 .location input { padding: 15px 0 15px 3%; }
+.feature-section .wrapper > ul { flex-basis: 33%; }
+.weather { width: 100%; }
 
 /*photo page*/
 .card { 
