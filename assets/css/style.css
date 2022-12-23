@@ -387,6 +387,13 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
+.feature-section h3 {
+  margin-bottom: 18px;
+  color: #E8E8E9;
+  font-size: 30px;
+  font-weight: 400;
+}
+
 .live-image img { border-radius: 5px; }
 
 h3,
@@ -462,7 +469,7 @@ h4,
   gap: 15px;
 }
 
-.text-container h4 { color: #E8E8E9; }
+.text-container p:nth-of-type(1) { color: #E8E8E9; }
 .application-container { margin-bottom: 10px; }
 
 .weather li { 
@@ -671,7 +678,7 @@ input:focus { color: #fff; }
 
 .weather-container { margin-bottom: 15px; }
 .weather li { gap: 15px; }
-.awesome-container h2 { margin-bottom: 25px; }
+.awesome-container h3 { margin-bottom: 25px; }
 .footer-top { padding-bottom: 10px; }
 
 footer p {
@@ -975,8 +982,8 @@ h4,
 .info p {font-size: 12.4px; }
 .info figure img { max-width: 11px; }
 .feature-section { padding: 68px 0 57px 0; }
-.text-container h4 { margin-bottom: 18px; }
-.application-container h2 { margin-bottom: 16px; }
+.text-container p:nth-of-type(1) { margin-bottom: 18px; }
+.application-container h3 { margin-bottom: 16px; }
 
 .application li figure,
 .weather li figure { 
@@ -991,7 +998,7 @@ h4,
 }
 
 .feature-section .wrapper { gap: 28px; }
-.awesome-container h2 { text-transform: capitalize; }
+.awesome-container h3 { text-transform: capitalize; }
 .subscribe-form { flex-basis: 66%; }
 .subscribe { flex-basis: 13.5%; }
 footer { padding: 47px 0 60px; }
@@ -1066,7 +1073,7 @@ h1 { font-size: 17px; }
 .cities li span { font-size: 11px; }
 
 .info p,
-.text-container h4,
+.text-container p:nth-of-type(1),
 .text-container p {
   font-size: 14px;
   line-height: 23px;
