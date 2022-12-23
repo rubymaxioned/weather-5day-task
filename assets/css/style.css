@@ -496,6 +496,13 @@ h4 {
 }
 
 .text-container p { margin-bottom: 10px; }
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather { width: 70%; }
 /*feature section end*/
 
 /*photo page style start*/
@@ -874,8 +881,9 @@ header .wrapper {
 
 .temperature figure { min-width: 20%; }
 header { padding-top: 45px; }
-
 .location input { padding: 15px 0 15px 3%; }
+.feature-section .wrapper > ul { flex-basis: 33%; }
+.weather { width: 100%; }
 
 /*photo page*/
 .card { 
