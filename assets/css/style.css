@@ -389,7 +389,8 @@ h2 {
 
 .live-image img { border-radius: 5px; }
 
-h3 {
+h3,
+.info-container p {
   color: #EFEFF0;
   font-size: 14px;
   font-weight: 400;
@@ -704,7 +705,10 @@ footer p {
 /*media query for 540px starts here*/
 @media only screen and (min-width: 540px) {
 .wrapper { width: 75%; }
-h3 { font-size: 15px; }
+
+h3,
+.info-container p { font-size: 15px; }
+
 .cities li span { font-size: 10px; }
 .cities li { margin-bottom: 35px; }
 
@@ -785,7 +789,7 @@ h4,
 
 .weather-section .wrapper { width: 55%; }
 .weather-header { font-size: 15px; }
-.info-container h3 { font-size: 20px; }
+.info-container p { font-size: 20px; }
 .temperature h2  { font-size: 85px; }
 
 .location input,
@@ -1013,7 +1017,7 @@ footer p {
 }
 
 .info-container { padding: 32px 3.5%; }
-.info-container h3 { font-size: 17.2px; }
+.info-container p { font-size: 17.2px; }
 .temperature h2 { font-size: 84px; }
 
 .temperature { 
@@ -1049,7 +1053,7 @@ footer p {
 /*media query for 1500px starts here*/
 @media only screen and (min-width: 1500px) {
 .weather-header { font-size: 16px; }
-.info-container h3 { font-size: 20px; }
+.info-container p { font-size: 20px; }
 
 .weather-info li span,
 .nav-menu li a,
