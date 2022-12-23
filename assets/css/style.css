@@ -432,7 +432,8 @@ h3 {
   font-size: 20px;
 }
 
-h4 {
+h4,
+.info p:nth-of-type(1) {
   margin-bottom: 16px;
   color: #F9F9FA;
   font-size: 12px;
@@ -758,7 +759,10 @@ footer p { font-size: 10px; }
   flex-basis: 15%;
 }
 
-h4 { font-size: 14px; }
+h4,
+.info p:nth-of-type(1) {
+  font-size: 14px;
+}
 
 .info p,
 .text-container p {
@@ -950,7 +954,12 @@ h2 { font-size: 33px; }
 .live-image img { min-height: 178px; }
 .dolor-section { padding-top: 67px; }
 .dolor li span { font-size: 22px; }
-h4 { font-size: 13px; }
+
+h4,
+.info p:nth-of-type(1) {
+  font-size: 13px;
+}
+
 .dolor { gap: 38px; }
 
 .dolor li { 
@@ -1044,7 +1053,7 @@ footer p {
 
 .weather-info li span,
 .nav-menu li a,
-.info h4 { 
+.info p:nth-of-type(1) { 
   font-size: 15px; 
 }
 
